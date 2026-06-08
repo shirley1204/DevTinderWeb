@@ -7,6 +7,8 @@ import Login from "./Authentication/Login";
 import Test from "./Test";
 import Profile from "./profile";
 import Feed from "./Feed/Feed";
+import Connections from "./Connections/Connections";
+import Request from "./Requets/Request"
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/" element={<Body />}>
             <Route path="feed" element={<Feed />} />
              <Route path="/profile" element={<Profile />} />
+             <Route path="/connections" element={<Connections />} />
+              <Route path="/requests" element={<Request />} />
           </Route>
         </Routes>
       </BrowserRouter>

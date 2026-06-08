@@ -11,7 +11,6 @@ const Navbar = () => {
   const lastName = user?.lastName || "";
 
 useEffect(() => {
-  console.log("Navbar User:", user);
 }, [user]);
 
   const handleLogout = async () => {
@@ -56,12 +55,24 @@ useEffect(() => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
+              <li>
               <Link to="/profile" className="justify-between">
                 <span className="badge">Profile</span>
               </Link>
+              </li>
+                <li>
+              <Link to="/connections" className="justify-between">
+                <span className="badge">Connections</span>
+              </Link>
+               <Link to="/requests" className="justify-between">
+                <span className="badge">Connection Requests</span>
+              </Link>
+              </li>
+              <li>
               <span className="badge text-blue-500" onClick={handleLogout}>
                 Logout
               </span>
+              </li>
             </ul>
           </div>
         </div>
