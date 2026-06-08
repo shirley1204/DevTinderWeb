@@ -19,7 +19,7 @@ const Body = () => {
         withCredentials: true,
       });
       if (res?.data) {
-        dispatch(addUser(res?.data));
+        dispatch(addUser(res?.data?.data));
       } else {
         navigate("/login");
       }

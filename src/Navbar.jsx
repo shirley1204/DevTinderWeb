@@ -1,14 +1,18 @@
 import axios from "axios";
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { BASE_URL } from "./Utils/Constants";
 
 const Navbar = () => {
   const user = useSelector((store) => store?.user);
   const navigate = useNavigate();
-  const firstName = user?.data?.firstName || "";
-  const lastName = user?.data?.lastName || "";
+  const firstName = user?.firstName || "";
+  const lastName = user?.lastName || "";
+
+useEffect(() => {
+  console.log("Navbar User:", user);
+}, [user]);
 
   const handleLogout = async () => {
     try {

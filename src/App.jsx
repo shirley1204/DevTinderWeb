@@ -5,6 +5,8 @@ import { AppStore } from "./Utils/Redux/AppStore";
 import Body from "./Body";
 import Login from "./Authentication/Login";
 import Test from "./Test";
+import Profile from "./profile";
+import Feed from "./Feed/Feed";
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
 
           {/* LAYOUT ROUTE */}
           <Route path="/" element={<Body />}>
-            <Route path="feed" element={<Test />} />
+            <Route path="feed" element={<Feed />} />
+             <Route path="/profile" element={<Profile />} />
           </Route>
         </Routes>
       </BrowserRouter>
