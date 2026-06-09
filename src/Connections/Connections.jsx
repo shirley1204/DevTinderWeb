@@ -1,8 +1,8 @@
 import axios from "axios";
-import { BASE_URL } from "../utils/constants";
+import { BASE_URL } from "../Utils/Constants";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addConnections } from "../utils/Redux/ConnectionSlice";
+import { addConnections } from "../Utils/Redux/ConnectionSlice";
 import { Link } from "react-router-dom";
 import ProfileImg from "../assets/default.jpg";
 

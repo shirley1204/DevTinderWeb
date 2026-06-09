@@ -1,7 +1,7 @@
 import axios from "axios";
-import { BASE_URL } from "../utils/constants";
+import { BASE_URL } from "../Utils/Constants";
 import { useDispatch, useSelector } from "react-redux";
-import { addRequests, removeRequest } from "../utils/Redux/RequestSlice";
+import { addRequests, removeRequest } from "../Utils/Redux/RequestSlice";
 import { useEffect, useState } from "react";
 import profileImg from "../assets/default.jpg"
 
