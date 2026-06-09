@@ -5,7 +5,7 @@ import { AppStore } from "./Utils/Redux/AppStore";
 import Body from "./Body";
 import Login from "./Authentication/Login";
 import Test from "./Test";
-import Profile from "./profile";
+import Profile from "./Profile";
 import Feed from "./Feed/Feed";
 import Connections from "./Connections/Connections";
 import Request from "./Requets/Request"
