@@ -9,6 +9,7 @@ import Profile from "./Profile";
 import Feed from "./Feed/Feed";
 import Connections from "./Connections/Connections";
 import Request from "./Requets/Request"
+import Premium from "./Premium/Premuim";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
              <Route path="/profile" element={<Profile />} />
              <Route path="/connections" element={<Connections />} />
               <Route path="/requests" element={<Request />} />
+               <Route path="/premiums" element={<Premium />} />
           </Route>
         </Routes>
       </BrowserRouter>

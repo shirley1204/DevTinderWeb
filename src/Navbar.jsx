@@ -67,6 +67,9 @@ useEffect(() => {
                <Link to="/requests" className="justify-between">
                 <span className="badge">Connection Requests</span>
               </Link>
+               <Link to="/premiums" className="justify-between">
+                <span className="badge">Premium</span>
+              </Link>
               </li>
               <li>
               <span className="badge text-blue-500" onClick={handleLogout}>
