@@ -10,6 +10,7 @@ import Feed from "./Feed/Feed";
 import Connections from "./Connections/Connections";
 import Request from "./Requets/Request"
 import Premium from "./Premium/Premuim";
+import Chat from "./Chat/Chat";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
              <Route path="/connections" element={<Connections />} />
               <Route path="/requests" element={<Request />} />
                <Route path="/premiums" element={<Premium />} />
+                <Route path="/chat/:targetUserId" element={<Chat />} />
           </Route>
         </Routes>
       </BrowserRouter>
